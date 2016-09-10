@@ -7,7 +7,7 @@ Benutzt diese gerne zum Üben oder Lehren.
 
 ## Allgemein
 
-´´´
+```
 -Kategorie
  +-(4-Buchstabiger Bezeichner der Kategorie)-Nummer
  	+-(Buchstabiger Bezeichner der Kategorie)-Nummer-Angabe.tex
@@ -15,12 +15,12 @@ Benutzt diese gerne zum Üben oder Lehren.
  	+-(Buchstabiger Bezeichner der Kategorie)-Nummer-Lsg.tex
  	+-(Buchstabiger Bezeichner der Kategorie)-Nummer-Lsg.pdf
  	+-(Buchstabiger Bezeichner der Kategorie)-Nummer-Zusätzliche Dateien
-´´´
+```
 
 
 ## Beispiel 
 
-´´´
+```
 -Binomische Formeln
  +-Bino-001
  	+-Bino-001-Angabe.tex
@@ -28,5 +28,5 @@ Benutzt diese gerne zum Üben oder Lehren.
  	+-Bino-001-Lsg.tex
  	+-Bino-001-Lsg.pdf
  	+-Bino-001-Zusätzliche Dateien
-´´´
+```
 
