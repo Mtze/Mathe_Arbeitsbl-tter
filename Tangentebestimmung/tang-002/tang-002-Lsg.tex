@@ -1,0 +1,241 @@
+\documentclass{scrartcl}
+\usepackage{amsmath}
+\usepackage{a4wide}
+\usepackage{float}
+\usepackage[ngerman]{babel}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\parindent0cm
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\usepackage[headsepline]{scrpage2}
+
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\ihead{Matthias Linhuber}
+\chead{Arbeitsblatt Mathe}
+\ohead{\today}
+
+\usepackage{geometry}
+\geometry{a4paper, top=20mm, left=20mm, right=20mm, bottom=10mm,
+headsep=7mm, footskip=12mm}
+
+
+
+
+\begin{document}
+
+		
+	\begin{enumerate}
+		
+		
+		\item Gegeben Seien Punkt $B(0,4)$ und Parabel $p(x):=(x-5)^2+s$.
+		\begin{enumerate}
+			\item Tangente durch den Punkt $B$ $\Rightarrow B \in G_q$ \label{Tangentengleichung_bestimmen} \\
+				\\ Punkt-Steigungs-Gleichung:
+				\begin{eqnarray}
+					q_{1/2}(x) &=& m_{1/2} \cdot (x-x_0)+y_0 \\
+					q_{1/2}(x) &=& m_{1/2} \cdot (x-0)+4 \\
+					q_{1/2}(x) &=& m_{1/2} \cdot x+4 \\
+				\end{eqnarray}
+				$q_{1/2}$ mit $p$ Gleichsetzen:
+				\begin{eqnarray}
+					q_{1/2}(x) &=& p(x)\\
+					m_{1/2} \cdot x+4 &=& (x-5)^2+s \\
+					m_{1/2} \cdot x+4 &=& (x^2-10x +25)+s\\
+					0 &=& x^2-10x-m_{1/2}\cdot x+21+s\\
+					0 &=& x^2+(-10-m_{1/2})x+21+s \label{Ende_Normalform_x}
+				\end{eqnarray}
+				Anwendung der Mitternachtsformel für $x_{1/2}$: $a=1$\ ;\ $b=(-10-m_{1/2})$\ ;\ $c= 21+s$
+				\begin{eqnarray}
+					D_x &=& b^2-4 \cdot a \cdot c \\
+					D_x &=& (-10-m_{1/2})^2 -4 \cdot 1 \cdot (21+s)\\
+					D_x &=& (m_{1/2}^2+20m_{1/2}+100) -84-4s\\
+					D_x &=& m_{1/2}^2+20m_{1/2}+16-4s \label{Ende_D_x}
+				\end{eqnarray}
+				
+				
+				
+				
+				Da eine Tangente gesucht ist dürfen nur Berührpunkte vorhanden sein $\Rightarrow D_x = 0$:
+				\begin{eqnarray}
+					D_x &=& 0 \\
+					0 &=& m_{1/2}^2+20m_{1/2}+16-4s   
+				\end{eqnarray}
+				Anwendung der Mitternachtsformel für $m_{1/2}$ $a=1$\ ;\ $b=20$\ ;\ $c= 16-4s$
+				\begin{eqnarray}
+					D_m &=& b^2 - 4 \cdot a \cdot c \\
+					D_m &=& 20^2 - 4 \cdot 1 \cdot (16-4s) \\
+					D_m &=& 336+16s \label{Ende_D_m}
+				\end{eqnarray}
+				Einsetzen in Mitternachtsformel:
+				\begin{eqnarray}
+					m_{1/2} &=& \frac{-b \pm \sqrt{D}}{2 \cdot a} \\
+					m_{1/2} &=& \frac{-20 \pm \sqrt{336+16s}}{2} \\
+					m_{1/2} &=& \frac{-20 \pm \sqrt{16\cdot (21+s)}}{2}\\
+					m_{1/2} &=& \frac{-20 \pm 4 \cdot \sqrt{21+s}}{2}\\
+					m_{1/2} &=& -10 \pm 2 \cdot \sqrt{21+s} 
+				\end{eqnarray}
+				
+				Die beiden Steigungen werden nun in $q(x)$ eingesetzt:
+				
+				\begin{eqnarray}
+					q_{1/2}(x) &=& m_{1/2} \cdot x+4 \\
+					q_{1/2}(x) &=& (-10 \pm 2 \cdot \sqrt{21+s})x +4 \\
+				\end{eqnarray}
+				
+				Die beiden Funktionen lauten:
+				
+				\begin{equation}
+					q_{1}(x) = (-10 + 2 \cdot \sqrt{21+s}) \cdot x + 4  = 2 \cdot (\sqrt{21+s} - 5) \cdot x + 4 
+				\end{equation}
+				und
+				\begin{equation}
+					q_{2}(x) = (-10 - 2 \cdot \sqrt{21+s})\cdot x + 4  = -2 \cdot (\sqrt{21+s} + 5) \cdot x + 4 
+				\end{equation}
+				
+				
+			\item Es gilt $B$ in $p(x) $ ein zu setzen:
+				\begin{eqnarray}
+					p(0)&=&4 \\
+					4 &=& (0-5)^2+s \\
+					4 &=& 25 + s\\
+					-21 &=& s
+				\end{eqnarray}
+			\item Im Folgenden Sei $s:=-2$.
+			\item Siehe GGB
+
+			\item Naiver Ansatz: $p(x) = q_1(x)$ und $p(x) = q_2(x)$. \\
+			\item 
+				Der erste Teil der Rechnung ist bereits in Aufgabe \ref{Tangentengleichung_bestimmen} beschrieben. Die Rechung wird nun nach (\ref{Ende_D_m}) weitergeführt: \\
+				
+				Zunächst das gegebene $s$ einsetzen:
+				\begin{eqnarray}
+					m_{1/2} &=& -10 \pm 2 \cdot \sqrt{21+s} \\
+					m_{1/2} &=& -10 \pm 2 \cdot \sqrt{21-2} \\
+					m_{1/2} &=& -10 \pm 2 \cdot \sqrt{19} \\
+					m_1 &=& -10 + 2 \cdot \sqrt{19} \label{m_1} \\
+					m_2 &=& -10 - 2 \cdot \sqrt{19}
+				\end{eqnarray}
+				
+				Die nun explizite Belegung von $m$ und $s$ kann in (\ref{Ende_Normalform_x}) eingesetzt werden. \\
+				
+				Zunächst $m_1$ (Also Berührpunkt $g$ und $q_1$)
+				\begin{eqnarray}
+					0 &=& x^2+(-10-m_{1})\cdot x+21+s \\
+					0 &=& x^2+(-10- (-10 + 2 \cdot \sqrt{19}))\cdot x+21-2 \\
+					0 &=& x^2+(- 2 \cdot \sqrt{19})\cdot x+19
+				\end{eqnarray}
+				Trivialerweise gilt $D = 0$, da wir $m$ so Bestimmt haben.
+				
+				\begin{eqnarray}
+					x&=& \frac{-b}{2 \cdot a} \\
+					x&=& \frac{-(-2 \cdot \sqrt{19})}{2} \\
+					x&=& \sqrt{19}
+				\end{eqnarray}
+				
+				Analoge Berechnung für $m_2$ (Berührpunkt $g$ und $q_2$):
+				\begin{eqnarray}
+					0 &=& x^2+(-10-m_{2})\cdot x+21+s \\
+					0 &=& x^2+(-10- (-10 - 2 \cdot \sqrt{19}))\cdot x+21-2 \\
+					0 &=& x^2+(2 \cdot \sqrt{19})\cdot x+19
+				\end{eqnarray}
+				
+				\begin{eqnarray}
+					x&=& \frac{-b}{2 \cdot a} \\
+					x&=& \frac{-(2 \cdot \sqrt{19})}{2} \\
+					x&=& -\sqrt{19}
+				\end{eqnarray}
+				
+				
+				
+				
+				
+				
+			\item Zwei geraden stehen Senkrecht aufeinander wenn gilt: $m_a \cdot m_b = -1$.\\
+
+				Senkrechte auf $q_1$: 
+				\begin{equation}
+					h(x) = m \cdot x + t \label{h(x)_alg}
+				\end{equation}
+				Laut (\ref{m_1}) gilt $m_1 = -10 + 2 \cdot \sqrt{19}$. Wir definieren nun  $m_a := m_1$
+				\begin{eqnarray}
+					m_a \cdot m_b &=& -1 \\
+					m_b &=& - \frac{1}{m_a} \\
+					m_b &=& - \frac{1}{-10 + 2 \cdot \sqrt{19}} \label{m_b}
+				\end{eqnarray}
+				
+				Nun setzen wir (\ref{m_b}) in (\ref{h(x)_alg}) ein:
+				
+				\begin{eqnarray}
+					h(x) &=& m_b \cdot x + t \\
+					h(x) &=& \left (- \frac{1}{-10 + 2 \cdot \sqrt{19}} \right ) \cdot x + t 
+				\end{eqnarray}
+				
+				Rechenweg analog für zweite Senkrechte.
+				
+			\item Der Punkt $N(0,t)$ Liegt auf $G_p$ wenn gilt: \label{Schnittpunkt_h_p}
+				\begin{equation}
+					p(0) = t
+				\end{equation}
+				Wir berechnen also:
+				\begin{eqnarray}
+					t &=& (0-5)^2-2 \\
+					t &=& 23
+				\end{eqnarray}
+			
+		\end{enumerate} % Ende Aufgabe 2
+		
+		
+		
+	\end{enumerate} 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+\end{document}
